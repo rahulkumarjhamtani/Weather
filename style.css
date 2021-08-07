@@ -60,10 +60,16 @@ html
     opacity:1; 
     cursor: pointer;
 }
+#us
+{
+    color:white;
+    font-size: 25px;
+}
 .social-icons
 {
     margin:auto;
     text-align: center;
+    margin-top:5%;
 }
 .social
 {

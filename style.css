@@ -12,7 +12,7 @@ html
     font-weight:500;
     color:rgb(254, 207, 64);
 }
-#about, #services, #contact
+#about, #services, #contact, #issue
 {
     float: left;
     width:70%;
@@ -23,7 +23,11 @@ html
     margin-left:8%;
     padding: 20px 40px 20px 40px;
 }
-#about h1, #services h1, #contact h1
+#contact
+{
+    height:500px;
+}
+#about h1, #services h1, #contact h1, #issue h1
 {
     font-size:50px;
     color:rgb(142, 142, 255);
@@ -32,7 +36,7 @@ html
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-bottom:3%;
 }
-#about p, #services p, #contact p
+#about p, #services p, #issue p
 {
     font-size:20px;
     color:rgb(255, 231, 223);
@@ -60,19 +64,38 @@ html
     opacity:1; 
     cursor: pointer;
 }
-#us
+#contact1
 {
+    float:left;
+    width:70%;
     color:white;
-    font-size: 25px;
+    font-size: 22px;
+}
+#contact1 h2
+{
+    margin-bottom: 2%;
+} 
+#contact1 h2 i
+{
+    margin-right: 2%;
+} 
+#contact2
+{
+    float:right;
+    width:30%;
+}
+#contact1, #contact2
+{
+    height:200px;
 }
 .social-icons
 {
     margin:auto;
     text-align: center;
-    margin-top:5%;
 }
 .social
 {
+    margin-top:7%;
     font-size:30px;
     color:rgb(255, 255, 255);
     margin-right:4%;

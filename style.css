@@ -27,6 +27,21 @@ html
 {
     height:500px;
 }
+#issue
+{
+    height:330px;
+}
+#foot
+{
+    float: left;
+    width:100%;
+    color:white;
+    background-color: rgb(0, 0, 0);
+    margin-top:4%;
+    padding-top:20px;
+    height:80px;
+    text-align: center;
+}
 #about h1, #services h1, #contact h1, #issue h1
 {
     font-size:50px;
@@ -36,11 +51,28 @@ html
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-bottom:3%;
 }
-#about p, #services p, #issue p
+#about p, #issue p, #services li
 {
     font-size:20px;
     color:rgb(255, 231, 223);
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    list-style-type: disc;
+}
+#services li
+{
+    font-size:23px;
+    margin-left:3%;
+}
+#services1
+{
+    float:left;
+    width:50%;
+}
+#services2
+{
+    float:right;
+    width:45%;
+    margin-left:3%;
 }
 #setfix
 {
@@ -105,4 +137,28 @@ html
 .social:hover
 {
     color:rgb(142, 142, 255);
+}
+.entertext
+{
+    height:100px;
+    width:100%;
+    font-size:22px;
+}
+.btn
+{
+    margin-top:2%;
+    font-size:20px;
+    background-color: rgb(51, 2, 51);
+    color:white;
+    border-radius:20px;
+    transition: all 0.7s;
+}
+.btn:hover
+{
+    background-color: rgb(88, 16, 88);
+    color:white;
+}
+.btn:focus
+{
+    color:white;
 }

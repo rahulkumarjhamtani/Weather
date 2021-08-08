@@ -13,7 +13,7 @@
 <body>
     <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-          <a class="navbar-item" href="https://bulma.io">
+          <a class="navbar-item" href="index.html">
             <span id="logo">BANK</span>
           </a>
       
@@ -26,10 +26,10 @@
       
         <div id="navbarBasicExample" class="navbar-menu">
           <div class="navbar-start">
-            <a class="navbar-item">
+            <a href="index.html" class="navbar-item">
               Home
             </a>
-            <a href="#about" class="navbar-item">
+            <a href="index.html#about" class="navbar-item">
               About
             </a>
             <div class="navbar-item has-dropdown is-hoverable">
@@ -38,20 +38,20 @@
               </a>
       
               <div class="navbar-dropdown">
-                <a class="navbar-item">
+                <a href="customer.html" navbar-item">
                   User Details
                 </a>
-                <a href="#about" class="navbar-item">
+                <a href="index.html#about" class="navbar-item">
                   Transaction
                 </a>
-                <a href="#services" class="navbar-item">
+                <a href="index.html#services" class="navbar-item">
                   Services
                 </a>
-                <a href="#contact" class="navbar-item">
+                <a href="index.html#contact" class="navbar-item">
                   Contact
                 </a>
                 <hr class="navbar-divider">
-                <a href="#issue" class="navbar-item">
+                <a href="index.html#issue" class="navbar-item">
                   Report an issue
                 </a>
               </div>
@@ -60,7 +60,16 @@
         </div>
       </nav>
 
-        
+      <div class="heading">
+          <form id="myform" class="box" method="POST">
+              <h1>Transfer Money</h1>
+              <input type="number" name="" placeholder="FROM" id="from">
+              <input type="number" name="" placeholder="TO" id="to">
+              <input type="number" name="" placeholder="AMOUNT" id="amount">
+              <input type="submit" name="" value="Send" onclick="alert('Money transferred!!')" id="btn">
+          </form>
+
+      </div>
 
         <div id="foot"><footer class="page-footer"><p class="copy footer-copyright text-center text-light">Created by : Rahul Kumar Jhamtani <br> &copy; 2021 Sparks Bank | All Rights Reserved</p></footer></div>
 </body>

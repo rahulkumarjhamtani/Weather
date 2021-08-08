@@ -6,12 +6,14 @@ html
     -o-background-size: cover;
     background-size: cover;
 }
+/* Navigation Bar */
 #logo
 {
     font-size:35px;
     font-weight:500;
     color:rgb(254, 207, 64);
 }
+/* Home Page */
 #about, #services, #contact, #issue
 {
     float: left;
@@ -31,6 +33,7 @@ html
 {
     height:330px;
 }
+/* Footer */
 #foot
 {
     float: left;
@@ -74,7 +77,7 @@ html
     width:45%;
     margin-left:3%;
 }
-#setfix1
+#setfix1, #setfix2
 {
     width: 20%;
     height:150px;
@@ -82,41 +85,26 @@ html
     margin-top:6%;
     margin-left:85%;
 }
-#fix1
+#fix1, #fix2
 {
-    height:150px;
-    width: 150px;
+    height:155px;
+    width: 155px;
     opacity:0.75; 
     transition: all 1s;
 }
-#fix1:hover
+#fix1:hover, #fix2:hover
 {
     height:180px; 
     width:180px;
     opacity:1; 
-    cursor: pointer;
+}
+#setfix1
+{
+    margin-top:4%;
 }
 #setfix2
 {
-    width: 20%;
-    height:150px;
-    position:fixed;
-    margin-top:23%;
-    margin-left:85%;
-}
-#fix2
-{
-    height:150px;
-    width: 150px;
-    opacity:0.75; 
-    transition: all 1s;
-}
-#fix2:hover
-{
-    height:180px; 
-    width:180px;
-    opacity:1; 
-    cursor: pointer;
+    margin-top:21%;
 }
 #contact1
 {
@@ -184,6 +172,7 @@ html
 {
     color:white;
 }
+/* Customers Page */
 .heading h1
 {
     font-size:50px;
@@ -247,4 +236,66 @@ table tr:hover
 {
     background-color: rgb(158, 152, 152);
     color:black;
+}
+/* Transaction Page */
+.box
+{
+    background: radial-gradient(circle at 100%, rgb(28, 24, 37), rgb(13, 9, 54) 50%, rgb(26, 4, 105) 75%, rgb(12, 3, 44) 75%);
+    width:70%;
+    padding:30px;
+    margin:auto;
+    margin-top:7%;
+    border-radius: 30px;
+}
+.box h1
+{
+    color:rgb(129, 129, 255);
+}
+input[type="number"]
+{
+    border:0;
+    background:none;
+    display:block;
+    margin:20px auto;
+    text-align: center;
+    color:white;
+    font-size:20px;
+    border:2px solid rgb(37, 37, 241);
+    padding: 14px 10px;
+    width:50%;
+    outline:none;
+    border-radius:24px;
+    transition:width 0.5s;
+}
+input[type="submit"]
+{
+    border:0;
+    background:none;
+    display:block;
+    margin:50px auto;
+    font-size:25px;
+    font-weight: bold;
+    text-align: center;
+    color:white;
+    border:2px solid gold;
+    padding: 14px 35px;
+    outline:none;
+    border-radius:24px;
+    transition:background-color 0.5s, color 0.5s;
+    cursor: pointer;
+}
+input[type="number"]:focus
+{
+    width:60%;
+    border-color:gold;
+}
+input[type="submit"]:hover
+{
+    background-color:gold;
+    color:rgb(0, 0, 0);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }

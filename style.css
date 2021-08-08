@@ -162,3 +162,56 @@ html
 {
     color:white;
 }
+table
+{
+    color:rgb(254, 207, 64);
+    width:80%;
+    margin:auto;
+    margin-top:7%;
+    text-align: center;
+    height:800px;
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+table td
+{
+    padding-top:2%;
+}
+table th
+{
+    color:rgb(255, 255, 255);
+    transition:background-color 0.8s,color 0.7s;
+    height:60px;
+    padding-top:0.9%;
+}
+table th:hover
+{
+    background-color: rgb(199, 191, 191);
+    color:black;
+}
+table tr:nth-child(odd)
+{
+    background-color: rgb(37, 34, 34);
+}
+table tr:nth-child(even)
+{
+    background-color: rgb(2, 2, 2);
+}
+table tr a
+{
+    color:rgb(18, 91, 224);
+}
+table tr a:hover
+{
+    color:rgb(3, 3, 43);
+    font-weight: bold;
+}
+table tr
+{
+    transition:background-color 0.8s,color 0.7s;
+}
+table tr:hover
+{
+    background-color: rgb(158, 152, 152);
+    color:black;
+}

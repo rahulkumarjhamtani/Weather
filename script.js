@@ -4,11 +4,11 @@ var main = document.getElementById('main');
 var form = document.getElementById('form');
 var search = document.getElementById('search');
 
-var url = (location) => 
-`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${key}`
+var url = (city) => 
+`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}`
 
-async function getweather(location) {
-    var resp = await fetch(url(location), {origin : "cors"});
+async function getweather(city) {
+    var resp = await fetch(url(city), {origin : "cors"});
     var respdata = await resp.json();
 
     addweather(respdata);
@@ -22,8 +22,10 @@ function addweather(data) {
 
     weather.innerHTML = 
     `<h2>${temp}°C</h2>
-    <p>${location}</p>
+    <p>${search.value}</p>
     `;
+
+    main.innerHTML = '';
 
     main.appendChild(weather);
 }
@@ -35,8 +37,8 @@ function ktoc(k) {
 form.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    var location = search.value;
-    if (location) {
-        getweather(location);
+    var city = search.value;
+    if (city) {
+        getweather(city);
     }
 });

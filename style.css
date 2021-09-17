@@ -9,6 +9,8 @@ body
 }
 input
 {
+    border-radius: 20px;
+    box-shadow: 0 4px rgba(0, 0, 0, 0.2);
     padding:10px;
     font-size:25px;
     outline: none;
@@ -27,6 +29,6 @@ input
 }
 .weather p
 {
-    font-size: 20px;
+    font-size: 25px;
     font-family: 'Merienda', cursive;
 }

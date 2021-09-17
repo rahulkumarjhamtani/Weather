@@ -3,14 +3,16 @@ body
     background: linear-gradient(to right, #022397, #1184f8);
     align-items: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     margin-top: 25vh;
 }
 input[type="text"]
 {
-    padding:12px;
-    font-size:20px;
+    padding:10px;
+    font-size:25px;
     outline: none;
     border: none;
     text-align: center;
+    font-family: 'Nanum Gothic', sans-serif;
 }

@@ -33,6 +33,10 @@ function addweather(data) {
     <span>${data.name} ${data.sys.country}</span>
     `;
     // <p>${search.value}</p>
+
+    // if ( search.value != data.name ) {
+    //     alert("Enter valid city")
+    // }
     
     main.innerHTML = '';
 

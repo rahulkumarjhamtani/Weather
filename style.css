@@ -26,9 +26,15 @@ input
 {
     font-size: 30px;
     font-family: 'Mali', cursive;
+    display: flex;
+    align-items: center;
 }
 .weather p
 {
     font-size: 25px;
     font-family: 'Merienda', cursive;
+}
+.weather img
+{
+    margin-left: 5vh;
 }

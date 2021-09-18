@@ -16,6 +16,8 @@ async function getweather(city) {
 
 function addweather(data) {
     var temp = ktoc(data.main.temp);
+    var min = ktoc(data.main.temp_min);
+    var max = ktoc(data.main.temp_max);
 
     var weather = document.createElement('div');
     weather.classList.add('weather');
@@ -24,7 +26,8 @@ function addweather(data) {
     `<h2>${temp}°C <img src="https://api.openweathermap.org/img/w/${data.weather[0].icon}.png" /></h2>
     
     <p>${data.weather[0].main}</p>
-    <p>${data.name} ${data.sys.country}</p>
+    <p>(${min}°C - ${max}°C)</p>
+    <h2>${data.name} ${data.sys.country}</h2>
     `;
     // <p>${search.value}</p>
     

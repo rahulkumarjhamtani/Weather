@@ -27,6 +27,9 @@ function addweather(data) {
     
     <p>${data.weather[0].main}</p>
     <p>(${min}°C - ${max}°C)</p>
+    <h3>Pressure : ${data.main.pressure}</h3>
+    <h3>Humidity : ${data.main.humidity}</h3> 
+    <h3>Visibility : ${data.visibility}</h3>
     <h2>${data.name} ${data.sys.country}</h2>
     `;
     // <p>${search.value}</p>

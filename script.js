@@ -30,7 +30,7 @@ function addweather(data) {
     <h3>Pressure : ${data.main.pressure}</h3>
     <h3>Humidity : ${data.main.humidity}</h3> 
     <h3>Visibility : ${data.visibility}</h3>
-    <h2>${data.name} ${data.sys.country}</h2>
+    <span>${data.name} ${data.sys.country}</span>
     `;
     // <p>${search.value}</p>
     

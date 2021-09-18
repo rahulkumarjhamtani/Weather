@@ -28,10 +28,11 @@ input
     font-family: 'Mali', cursive;
     display: flex;
     align-items: center;
+    text-align: center;
 }
 .weather h3
 {
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'Rubik', sans-serif;
     display: flex;
     align-items: center;

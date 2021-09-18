@@ -23,9 +23,11 @@ function addweather(data) {
     weather.innerHTML = 
     `<h2>${temp}°C <img src="https://api.openweathermap.org/img/w/${data.weather[0].icon}.png" /></h2>
     
-    <p>${search.value}</p>
+    <p>${data.weather[0].main}</p>
+    <p>${data.name} ${data.sys.country}</p>
     `;
-
+    // <p>${search.value}</p>
+    
     main.innerHTML = '';
 
     main.appendChild(weather);

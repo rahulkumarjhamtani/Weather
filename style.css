@@ -28,6 +28,7 @@ input
     font-family: 'Mali', cursive;
     display: flex;
     align-items: center;
+    padding-left:10vh;
 }
 .weather span
 {
@@ -42,7 +43,7 @@ input
 }
 .weather p
 {
-    font-size: 25px;
+    font-size: 23px;
     font-family: 'Merienda', cursive;
 }
 .weather img

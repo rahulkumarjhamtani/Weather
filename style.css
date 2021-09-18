@@ -29,6 +29,13 @@ input
     display: flex;
     align-items: center;
 }
+.weather h3
+{
+    font-size: 25px;
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    align-items: center;
+}
 .weather p
 {
     font-size: 25px;

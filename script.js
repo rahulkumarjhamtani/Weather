@@ -35,7 +35,8 @@ function addweather(data) {
     // <p>${search.value}</p>
 
     // if ( search.value != data.name ) {
-    //     alert("Enter valid city")
+    //     weather.innerHTML = "";
+    //     alert("Enter valid city");
     // }
     
     main.innerHTML = '';

@@ -23,7 +23,7 @@ function addweather(data) {
     weather.classList.add('weather');
 
     weather.innerHTML = 
-    `<h2>${temp}°C <img src="https://api.openweathermap.org/img/w/${data.weather[0].icon}.png" /></h2>
+    `<h2><img src="https://api.openweathermap.org/img/w/${data.weather[0].icon}.png" /> ${temp}°C <img src="https://api.openweathermap.org/img/w/${data.weather[0].icon}.png" /></h2>
     
     <p>${data.weather[0].main}</p>
     <p>(${min}°C - ${max}°C)</p>

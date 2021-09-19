@@ -28,7 +28,6 @@ input
     font-family: 'Mali', cursive;
     display: flex;
     align-items: center;
-    padding-left:10vh;
 }
 .weather span
 {
@@ -49,4 +48,5 @@ input
 .weather img
 {
     margin-left: 1vh;
+    margin-right: 1vh;
 }

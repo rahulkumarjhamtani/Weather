@@ -50,3 +50,106 @@ input
     margin-left: 1vh;
     margin-right: 1vh;
 }
+
+.bouncer
+{
+    width:100%;
+    height:170vh;
+    position: fixed;
+    background-color: rgb(153, 177, 255);
+    z-index:1000;
+    display: flex;
+    justify-content: center;
+}
+.bouncer div
+{
+    display: inline-block;
+    width:30px;
+    height:30px;
+    background-color: rgb(1, 1, 59);
+    border-radius: 50%;
+    animation: bounce 0.4s cubic-bezier(0.19, 0.57, 0.3, 0.98) infinite alternate;
+    margin-left:5%;
+    margin-top:50%;
+}
+.bouncer div:nth-child(2)
+{
+    animation-delay:0.1s;
+    opacity:0.9;
+}
+.bouncer div:nth-child(3)
+{
+    animation-delay:0.2s;
+    opacity:0.8;
+}
+.bouncer div:nth-child(4)
+{
+    animation-delay:0.3s;
+    opacity:0.7;
+}
+@keyframes bounce
+{
+    from{transform: translateY(0px);}
+    to{transform: translateY(-120px);}
+}
+/* responsiveness */
+@media (max-width:575px)
+{
+    .bouncer div
+    {
+        width:28px;
+        height:28px;
+    }
+    @keyframes bounce
+    {
+        from{transform: translateY(0px);}
+        to{transform: translateY(-80px);}
+    }
+}
+@media (min-width:576px) and (max-width:767px)
+{
+    .bouncer div
+    {
+        width:29px;
+        height:29px;
+    }
+    @keyframes bounce
+    {
+        from{transform: translateY(0px);}
+        to{transform: translateY(-80px);}
+    }
+}
+@media (min-width:768px) and (max-width:991px)
+{
+    .bouncer div
+    {
+        width:29px;
+        height:29px;
+    }
+    @keyframes bounce
+    {
+        from{transform: translateY(0px);}
+        to{transform: translateY(-100px);}
+    }
+}
+@media (min-width:992px) and (max-width:1199px)
+{
+    .bouncer div
+    {
+        width:30px;
+        height:30px;
+    }
+    @keyframes bounce
+    {
+        from{transform: translateY(0px);}
+        to{transform: translateY(-110px);}
+    }
+}
+@media(min-width:1200px)
+{
+    @keyframes bounce
+    {
+        from{transform: translateY(0px);}
+        to{transform: translateY(-120px);}
+    }
+}

@@ -18,10 +18,14 @@ function addweather(data) {
     var temp = ktoc(data.main.temp);
     var min = ktoc(data.main.temp_min);
     var max = ktoc(data.main.temp_max);
-
+    
     var weather = document.createElement('div');
     weather.classList.add('weather');
 
+    if ( search.value.toLowerCase() != data.name.toLowerCase() ) {
+        alert("Enter valid city");
+    }
+    
     weather.innerHTML = 
     `<h2><img src="https://api.openweathermap.org/img/w/${data.weather[0].icon}.png" /> ${temp}°C <img src="https://api.openweathermap.org/img/w/${data.weather[0].icon}.png" /></h2>
     
@@ -34,10 +38,6 @@ function addweather(data) {
     `;
     // <p>${search.value}</p>
 
-    // if ( search.value != data.name ) {
-    //     weather.innerHTML = "";
-    //     alert("Enter valid city");
-    // }
     
     main.innerHTML = '';
 
@@ -56,3 +56,8 @@ form.addEventListener("submit", (e) => {
         getweather(city);
     }
 });
+
+var preloader = document.getElementById("stop");
+    function loadpage() {
+        preloader.style.display = 'none';
+    }

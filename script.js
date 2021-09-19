@@ -8,36 +8,42 @@ var url = (city) =>
 `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}`
 
 async function getweather(city) {
-    var resp = await fetch(url(city), {origin : "cors"});
-    var respdata = await resp.json();
-
+    try {
+        var resp = await fetch(url(city), {origin : "cors"});
+        var respdata = await resp.json();
+    } catch (error) {
+        
+        alert("Enter valid city");
+    }
+    
+    
     addweather(respdata);
 }
 
 function addweather(data) {
-    var temp = ktoc(data.main.temp);
-    var min = ktoc(data.main.temp_min);
-    var max = ktoc(data.main.temp_max);
-    
     var weather = document.createElement('div');
     weather.classList.add('weather');
+    weather.innerHTML = "";
 
-    if ( search.value.toLowerCase() != data.name.toLowerCase() ) {
+    try {
+        var temp = ktoc(data.main.temp);
+        var min = ktoc(data.main.temp_min);
+        var max = ktoc(data.main.temp_max);
+        weather.innerHTML = 
+        `<h2><img src="https://api.openweathermap.org/img/w/${data.weather[0].icon}.png" /> ${temp}°C <img src="https://api.openweathermap.org/img/w/${data.weather[0].icon}.png" /></h2>
+        
+        <p>${data.weather[0].main}</p>
+        <p>(${min}°C - ${max}°C)</p>
+        <h3>Pressure : ${data.main.pressure}</h3>
+        <h3>Humidity : ${data.main.humidity}</h3> 
+        <h3>Visibility : ${data.visibility}</h3>
+        <span>${data.name} ${data.sys.country}</span>
+        `;
+        // <p>${search.value}</p>
+        
+    } catch (error) {
         alert("Enter valid city");
     }
-    
-    weather.innerHTML = 
-    `<h2><img src="https://api.openweathermap.org/img/w/${data.weather[0].icon}.png" /> ${temp}°C <img src="https://api.openweathermap.org/img/w/${data.weather[0].icon}.png" /></h2>
-    
-    <p>${data.weather[0].main}</p>
-    <p>(${min}°C - ${max}°C)</p>
-    <h3>Pressure : ${data.main.pressure}</h3>
-    <h3>Humidity : ${data.main.humidity}</h3> 
-    <h3>Visibility : ${data.visibility}</h3>
-    <span>${data.name} ${data.sys.country}</span>
-    `;
-    // <p>${search.value}</p>
-
     
     main.innerHTML = '';
 

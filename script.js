@@ -65,5 +65,5 @@ form.addEventListener("submit", (e) => {
 
 var preloader = document.getElementById("stop");
     function loadpage() {
-        // preloader.style.display = 'none';
+        preloader.style.display = 'none';
     }

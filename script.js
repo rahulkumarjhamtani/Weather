@@ -51,6 +51,7 @@ function addweather(data) {
     main.appendChild(weather);
 }
 
+// convert kelvin to celcius
 function ktoc(k) {
     return (k - 273.15).toFixed(2);
 }

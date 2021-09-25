@@ -17,8 +17,7 @@ async function getweather(city) {
         
         alert("Enter valid city");
     }
-    
-    
+
     addweather(respdata);
 }
 

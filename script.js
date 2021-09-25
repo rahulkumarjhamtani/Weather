@@ -5,6 +5,7 @@ var main = document.getElementById('main');
 var form = document.getElementById('form');
 var search = document.getElementById('search');
 
+// Weather API 
 var url = (city) => 
 `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}`
 
